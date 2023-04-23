@@ -14,42 +14,15 @@
 <body>
     <section class="content">
         <h1>Pokedex</h1>
+        <ol id="pokemons"></ol>
     
-        <ol class="pokemons">
-            <li class="pokemon">
-                <span class="number">#001</span>
-                <span class="name">Bulbasaur</span>
-                <div class="detail">
-                    <ol class="types">
-                        <li class="type">Grass</li>
-                        <li class="type">Poison</li>
-                    </ol>
-                    <img src="https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/001.png" alt="bulbasaur">
-                </div>
-            </li>
-            <!-- <li>
-                Isasaur
-                <img src="https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/002.png" alt="">
-            </li>
-            <li>
-                Venusaur
-                <img src="https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/003.png" alt="">
-            </li>
-            <li>
-                Charmander
-                <img src="https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/004.png" alt="">
-            </li>
-            <li>
-                Charmeleon
-                <img src="https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/005.png" alt="">
-            </li>
-            <li>
-                Charizard
-                <img src="https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/006.png" alt="">
-            </li> -->
-        </ol>
+        <div class="pagination">
+            <button id="loadMoreButton">Load More</button>
+        </div>
     </section>
 
+    <script src="assets/js/pokemon-model.js"></script>
+    <script src="assets/js/poke-api.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
