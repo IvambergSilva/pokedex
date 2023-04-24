@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="assets/css/pokedex.css">
+    <link rel="stylesheet" href="assets/css/pokemonCard.css">
     <link rel="stylesheet" href="assets/css/global.css">
     <title>Pokedex</title>
 </head>
 <body>
     <section class="content">
-        <h1>Pokedex</h1>
-        <ol id="pokemons"></ol>
-    
+        <h1 class="title">Pokedex</h1>
+        <ol id="pokemons" class="pokemons"></ol>
         <div class="pagination">
             <button id="loadMoreButton">Load More</button>
         </div>
     </section>
-
+    <section id="card"></section>
+    
     <script src="assets/js/pokemon-model.js"></script>
     <script src="assets/js/poke-api.js"></script>
     <script src="assets/js/script.js"></script>

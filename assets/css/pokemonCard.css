@@ -1,0 +1,142 @@
+#card {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pokemonContainer {
+    width: 25rem;
+    box-shadow: 0 0 3px #00000080;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.pokemonCard {
+    transition: all 1s;
+    display: grid;
+    padding: 1.5rem;
+}
+
+.arrowLeft {
+    cursor: pointer;
+    margin: 2rem 0 0 2rem;
+    position: absolute;
+}
+
+.arrowLeft div {
+    width: 20px;
+    height: 2px;
+    background: #FFF;
+    border-radius: 2px;
+}
+
+.arrowLeft div:first-child {
+    transform: rotate(-45deg) translate(-2px);
+}
+.arrowLeft div:last-child {
+    transform: rotate(45deg) translate(-1px);
+}
+
+.numberCard {
+    color: #000;
+    opacity: .6;
+    text-align: right;
+    font-size: 1rem;
+    text-shadow: 1px 2px 5px #00000080;
+}
+
+.nameCard {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    text-transform: capitalize;
+    color: #FFF;
+    font-weight: 700;
+    text-shadow: 1px 2px 5px #FFFFFF80;
+}
+
+.typesCard {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.typesCard .typeCard {
+    color: #FFF;
+    padding: .5rem 1rem;
+    font-size: 0.8rem;
+    margin: 0.25rem 0;
+    border-radius: 1rem;
+    filter: brightness(1.2);
+    text-align: center;
+    box-shadow: 1px 2px 3px #00000080;
+}
+
+aside {
+    background: #FFF;
+    padding: 2rem 1.5rem;
+    border-radius: 2rem;
+}
+
+aside ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+aside ul li {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #909090;
+}
+
+aside ul li:hover {
+    color: #555;
+    transition: 0.2s;
+}
+
+table {
+    width: 100%;
+}
+
+aside div table tr {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+aside div table tr td:first-child {
+    min-width: 40%; 
+    color: #909090;
+    font-weight: 500;
+}
+
+aside div table tr td:not(:first-child) {
+    word-break: break-all;
+    color: #555;
+    font-weight: 600;
+}
+
+aside div table tr td:not(:first-child):after {
+    content: ",";
+}
+
+aside div table tr td:last-child:after {
+    content: "";
+}
+
+.blockImg{
+    display: flex;
+    justify-content: center;
+    height: 15rem;
+}
+
+.imgCard {
+    width: 100%;
+    transform: rotateY(180deg);
+}
